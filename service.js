@@ -1,12 +1,9 @@
 const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser')
-
 const app = express();
 const port = 3000;
 app.use(bodyParser.json())
-
-process.env.BOT_TOKEN = '6944889715:AAHuI4_CqmctJvEa1jD4s_BectEE9d1jqGo'
 
 const sendMessage = async (name, phone) => {
     let text = '<b>Заявка</b>\n';
