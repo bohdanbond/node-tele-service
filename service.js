@@ -14,7 +14,7 @@ const sendMessage = async (name, phone) => {
         await axios.post(`https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage`, {
             chat_id: '@landingromashop',
             parse_mode: 'HTML',
-            text: 'test'
+            text
         })
     } catch (e) {
         console.log(e)
